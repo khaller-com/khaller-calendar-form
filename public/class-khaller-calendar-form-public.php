@@ -74,7 +74,8 @@ class Khaller_Calendar_Form_Public {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/khaller-calendar-form-public.css', array(), $this->version, 'all' );
-
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'jsCalendar/jsCalendar.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/jsCalendar.darkseries.min.css', array(), $this->version, 'all' );
 	}
 
 	/**
@@ -97,7 +98,7 @@ class Khaller_Calendar_Form_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/khaller-calendar-form-public.js', array( 'jquery' ), $this->version, false );
-
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'jsCalendar/jsCalendar.min.js', array(), $this->version, false );
 	}
 
 }
