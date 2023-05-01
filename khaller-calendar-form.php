@@ -13,9 +13,9 @@
  * @package           Khaller_Calendar_Form
  *
  * @wordpress-plugin
- * Plugin Name:       CalendarInForm
+ * Plugin Name:       Calendar and time picker for Contact Form 7
  * Plugin URI:        https://khaller.com
- * Description:       Replace default date input to calendar 
+ * Description:       Add prettier time picker and calendar
  * Version:           1.0.0
  * Author:            Krzysztof Haller
  * Author URI:        https://khaller.com
