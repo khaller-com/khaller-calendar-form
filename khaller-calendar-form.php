@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Calendar and time picker for Contact Form 7
- * Plugin URI:        https://khaller.com
+ * Plugin URI:        https://github.com/khaller-com/khaller-calendar-form
  * Description:       Add prettier time picker and calendar
  * Version:           1.0.0
  * Author:            Krzysztof Haller
