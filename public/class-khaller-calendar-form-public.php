@@ -74,8 +74,10 @@ class Khaller_Calendar_Form_Public {
 		 */
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/khaller-calendar-form-public.css', array(), $this->version, 'all' );
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'jsCalendar/jsCalendar.min.css', array(), $this->version, 'all' );
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/jsCalendar.darkseries.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name . 'jsCalendar-css', plugin_dir_url( __FILE__ ) . 'css/jsCalendar.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name . 'jsCalendar-css-theme', plugin_dir_url( __FILE__ ) . 'css/jsCalendar.darkseries.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name . 'flatpickr-css', "https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css", array(), $this->version, 'all' );
+
 	}
 
 	/**
@@ -97,8 +99,9 @@ class Khaller_Calendar_Form_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/khaller-calendar-form-public.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'jsCalendar/jsCalendar.min.js', array(), $this->version, false );
+		 wp_enqueue_script( $this->plugin_name . 'jsCalendar-js', plugin_dir_url( __FILE__ ) . 'js/jsCalendar.min.js', array(), $this->version, true );
+		 wp_enqueue_script( $this->plugin_name . 'flatpickr-js', "https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js", [], $this->version, true );
+		 wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/khaller-calendar-form-public.js', array( 'jquery' ), $this->version, true );
 	}
 
 }
